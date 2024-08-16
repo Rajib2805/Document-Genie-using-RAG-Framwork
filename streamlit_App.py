@@ -10,6 +10,9 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 import os
 
+import faiss
+from langchain_community.docstore.in_memory import InMemoryDocstore
+
 st.set_page_config(page_title="Document Genie", layout="wide")
 
 st.markdown("""
